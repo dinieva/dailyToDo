@@ -18,11 +18,11 @@ export default {
         },
         extend: {
             backgroundImage: {
-                'no-tasks': "url('/images/swim.jpg')",
-                filter: "url('/images/filter.svg')",
-                calendar: "url('/images/calendar.svg')",
-                list: "url('/images/list-tick.svg')",
-                trash: "url('/images/trash.svg')",
+                'no-tasks': "url('./images/swim.jpg')",
+                filter: "url('./images/filter.svg')",
+                calendar: "url('./images/calendar.svg')",
+                list: "url('./images/list-tick.svg')",
+                trash: "url('./images/trash.svg')",
             },
         },
     },
