@@ -5,10 +5,7 @@
     <div class="w-96 flex flex-col justify-center items-start p-5">
       <div class="w-96 flex justify-between items-center">
         <h1 class="block text-3xl">Список задач</h1>
-
-        <FiltersComponent
-          @selectedOption="(param) => (filterTasksStore.visibility = param)"
-        />
+        <FiltersComponent />
       </div>
     </div>
 

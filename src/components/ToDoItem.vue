@@ -35,22 +35,18 @@
 </template>
 
 <script setup lang="ts">
-import { PropType } from "vue";
 import { useToDoStore } from "../stores/toDoStore";
-import { NewTask } from "../types/NewTask";
+import type { NewTask } from "../types/NewTask";
 
 const taskStore = useToDoStore();
 
-const props = defineProps({
-  task: {
-    type: Object as PropType<NewTask>,
-    required: true,
-  },
-  showDate: {
-    type: Boolean,
-    required: false,
-    default: false,
-  },
+interface Props {
+  showDate: Boolean;
+  task: NewTask;
+}
+
+withDefaults(defineProps<Props>(), {
+  showDate: () => false,
 });
 </script>
 

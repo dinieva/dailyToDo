@@ -11,7 +11,7 @@
           v-model="formatDateStore.dateFormate"
           class="cursor-pointer"
           @change="formatDateStore.date = new Date(formatDateStore.dateFormate)"
-        /><!-- $event.target.value -->
+        />
       </div>
     </div>
 
@@ -36,8 +36,6 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue";
-import type { Ref } from "vue";
 import { useToDoStore } from "../stores/toDoStore";
 import { useFormatDateStore } from "../stores/formatDateStore";
 import ToDoList from "../components/ToDoList.vue";

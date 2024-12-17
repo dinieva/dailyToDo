@@ -4,7 +4,7 @@ export interface NewTask {
     category: string;
     done: boolean;
     date?: string;
-  };
+};
 
 export  interface Props {
     task: NewTask
