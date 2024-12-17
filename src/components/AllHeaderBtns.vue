@@ -1,6 +1,6 @@
 <template>
   <div class="flex justify-center gap-5 border-b-2 border-cyan-300 w-96 pb-5">
-    <RouterLink to="/">
+    <RouterLink to="/dailyToDo">
       <button
         class="w-10 h-10 bg-calendar bg-center bg-no-repeat bg-contain hover:scale-125 relative"
         @click="formatDateStore.date = new Date()"

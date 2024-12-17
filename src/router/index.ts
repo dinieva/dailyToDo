@@ -5,7 +5,7 @@ export const router = createRouter({
     history: createWebHistory(),
     routes: [
         {
-            path: '/dailyToDo/',
+            path: '/dailyToDo',
             name: 'home',
             component: () => import('../views/CurrentTasksPage.vue'),
         },
