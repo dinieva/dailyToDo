@@ -75,7 +75,7 @@ const today: string = new Date().toISOString().split("T")[0]; // для кале
 const addNewTask = async (text: string, priority: string, date: string) => {
   if (text && priority && date) {
     taskStore.addNewTask(text, priority, date);
-    router.push("/dailyToDo"); // вызывается mounted
+    router.push("/"); // вызывается mounted
   }
 };
 </script>
